@@ -15,12 +15,6 @@ export default function Footer() {
             <Link href="#how-it-works" className="text-gray-300 hover:text-purple-400 transition-colors">
               How It Works
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-300 hover:text-purple-400 transition-colors">
-              Terms of Service
-            </Link>
           </nav>
         </div>
         <div className="mt-8 text-center text-gray-400 text-sm">

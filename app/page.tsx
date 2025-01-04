@@ -69,10 +69,20 @@ export default function Home() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Button className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-10 text-lg font-medium text-white shadow-lg transition-all hover:shadow-blue-500/25 hover:from-blue-600 hover:to-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 disabled:pointer-events-none disabled:opacity-50">
+              <Link
+                href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
+                passHref
+              >
+                <Button
+                  as="a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-10 text-lg font-medium text-white shadow-lg transition-all hover:shadow-blue-500/25 hover:from-blue-600 hover:to-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 disabled:pointer-events-none disabled:opacity-50"
+                >
                   Add to Discord
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
+              </Link>
               </motion.div>
             </div>
           </div>

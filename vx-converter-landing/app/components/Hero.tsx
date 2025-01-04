@@ -48,26 +48,26 @@ export default function Hero() {
             </a>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="lg:w-1/2 mt-10 lg:mt-0"
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="relative"
-          >
-            <Image
-              src="/placeholder.svg"
-              alt="VX Converter Demo"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 rounded-lg"></div>
-          </motion.div>
-        </motion.div>
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="lg:w-1/2 w-full mt-10 lg:mt-0 flex justify-center lg:justify-end"
+            >
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="relative w-full max-w-md lg:max-w-lg"
+            >
+                <Image
+                src="/vx-demo.gif"
+                alt="VX Converter Demo"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-xl w-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 rounded-lg"></div>
+            </motion.div>
+            </motion.div>
       </div>
     </section>
   )

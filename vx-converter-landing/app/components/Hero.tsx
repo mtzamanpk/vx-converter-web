@@ -43,7 +43,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
             >
-                Add to Your Server
+                Add to Discord
             </motion.button>
             </a>
         </motion.div>

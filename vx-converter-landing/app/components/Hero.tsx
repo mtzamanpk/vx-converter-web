@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="text-xl mb-8 text-gray-300"
           >
-            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your server's content sharing experience!
+            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your server&apos;s content sharing experience!
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05 }}

@@ -30,44 +30,39 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="text-xl mb-8 text-gray-300"
           >
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your server&#39;s content sharing experience!
+            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your server's content sharing experience!
           </motion.p>
-          <a
-            href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
-            >
-                Add to Discord
-            </motion.button>
-            </a>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+          >
+            Add to Your Server
+          </motion.button>
         </motion.div>
         <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="lg:w-1/2 w-full mt-10 lg:mt-0 flex justify-center lg:justify-end"
-            >
-            <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="relative w-full max-w-md lg:max-w-lg"
-            >
-                <Image
-                src="/vx-demo.gif"
-                alt="VX Converter Demo"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-xl w-full"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 rounded-lg"></div>
-            </motion.div>
-            </motion.div>
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="lg:w-1/2 mt-10 lg:mt-0"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="relative"
+          >
+            <Image
+              src="/vx-demo.gif"
+              alt="VX Converter Demo"
+              width={1200}
+              height={675}
+              quality={90}
+              className="rounded-lg shadow-2xl"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 rounded-lg"></div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   )

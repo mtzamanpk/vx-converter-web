@@ -7,6 +7,15 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'VX Converter - Transform Social Media Links for Discord',
   description: 'VX Converter turns Twitter, TikTok, and Instagram links into rich Discord embeds instantly.',
+  icons: {
+    icon: [
+      { url: '/VX_Converter_logo.jpg', sizes: '32x32', type: 'image/jpg' },
+      { url: '/VX_Converter_logo.jpg', sizes: '192x192', type: 'image/jpg' },
+      { url: '/VX_Converter_logo.jpg', sizes: '512x512', type: 'image/jpg' },
+    ],
+    shortcut: '/VX_Converter_logo.jpg',
+    apple: '/VX_Converter_logo.jpg',
+  },
 }
 
 export default function RootLayout({

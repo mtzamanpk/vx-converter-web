@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Header() {
@@ -15,12 +16,22 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-            VX Converter
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/VX_Converter_logo.jpg"
+              alt="VX Converter Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              VX Converter
+            </span>
           </Link>
           <div className="hidden md:flex space-x-6">
             <Link href="#features" className="hover:text-purple-400 transition-colors">Features</Link>
             <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">How It Works</Link>
+            <Link href="#demo" className="hover:text-purple-400 transition-colors">Demo</Link>
           </div>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -44,6 +55,7 @@ export default function Header() {
           >
             <Link href="#features" className="hover:text-purple-400 transition-colors">Features</Link>
             <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">How It Works</Link>
+            <Link href="#demo" className="hover:text-purple-400 transition-colors">Demo</Link>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

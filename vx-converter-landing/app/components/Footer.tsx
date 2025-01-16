@@ -15,6 +15,30 @@ export default function Footer() {
             <Link href="#how-it-works" className="text-gray-300 hover:text-purple-400 transition-colors">
               How It Works
             </Link>
+            <Link 
+              href="https://discord.gg/entmj9fGxH" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-300 hover:text-purple-400 transition-colors"
+            >
+              Discord
+            </Link>
+            <Link 
+              href="https://docs.google.com/document/d/1lDNjxq60lZmUBwi0RXHSKhAAoRyc1se35gkNd8d2ZSk/edit?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-purple-400 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link 
+              href="https://docs.google.com/document/d/1EfyWvaYlDk6xzF7MqABlBBl-L9nE2S9ZwN9uA-ab5F8/edit?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-purple-400 transition-colors"
+            >
+              Terms of Service
+            </Link>
           </nav>
         </div>
         <div className="mt-8 text-center text-gray-400 text-sm">

@@ -6,7 +6,7 @@ import Image from 'next/image'
 const demoSteps = [
   {
     title: 'Original Link',
-    content: 'https://twitter.com/elonmusk/status/1671913264046546944',
+    content: 'https://x.com/X/status/1875989945401372875',
     image: '/Step_1.png'
   },
   {

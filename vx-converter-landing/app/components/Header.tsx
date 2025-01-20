@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/VX_Converter_logo_192x192.jpg"
+              src="/VX_Converter_logo.jpg"
               alt="VX Converter Logo"
               width={40}
               height={40}

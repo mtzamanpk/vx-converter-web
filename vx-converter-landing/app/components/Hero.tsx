@@ -52,7 +52,7 @@ export default function Hero() {
         >
           <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }} className="relative">
             <Image
-              src="/hero-image.png"
+              src="/vx-demo.gif"
               alt="VX Converter Demo"
               width={1200}
               height={675}

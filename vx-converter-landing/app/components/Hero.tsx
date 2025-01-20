@@ -1,6 +1,6 @@
-'use client'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+"use client"
+import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -30,15 +30,19 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="text-xl mb-8 text-gray-300"
           >
-            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your server&apos;s content sharing experience!
+            VX Converter instantly turns Twitter, TikTok, and Instagram links into rich Discord embeds. Elevate your
+            server&apos;s content sharing experience!
           </motion.p>
-          <motion.button
+          <motion.a
+            href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+            className="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl inline-block"
           >
             Add to Your Server
-          </motion.button>
+          </motion.a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -46,13 +50,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="lg:w-1/2 mt-10 lg:mt-0"
         >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="relative"
-          >
+          <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }} className="relative">
             <Image
-              src="/vx-demo.gif"
+              src="/hero-image.png"
               alt="VX Converter Demo"
               width={1200}
               height={675}

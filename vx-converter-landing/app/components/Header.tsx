@@ -1,8 +1,8 @@
-'use client'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import Image from 'next/image'
-import { useState } from 'react'
+"use client"
+import { motion } from "framer-motion"
+import Link from "next/link"
+import Image from "next/image"
+import { useState } from "react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/VX_Converter_logo.jpg"
+              src="/VX_Converter_logo_192x192.jpg"
               alt="VX Converter Logo"
               width={40}
               height={40}
@@ -29,19 +29,34 @@ export default function Header() {
             </span>
           </Link>
           <div className="hidden md:flex space-x-6">
-            <Link href="#features" className="hover:text-purple-400 transition-colors">Features</Link>
-            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">How It Works</Link>
-            <Link href="#demo" className="hover:text-purple-400 transition-colors">Demo</Link>
+            <Link href="#features" className="hover:text-purple-400 transition-colors">
+              Features
+            </Link>
+            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">
+              How It Works
+            </Link>
+            <Link href="#demo" className="hover:text-purple-400 transition-colors">
+              Demo
+            </Link>
           </div>
-          <motion.button
+          <motion.a
+            href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold"
+            className="hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold"
           >
             Add to Discord
-          </motion.button>
+          </motion.a>
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -53,16 +68,25 @@ export default function Header() {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden mt-4 flex flex-col space-y-4"
           >
-            <Link href="#features" className="hover:text-purple-400 transition-colors">Features</Link>
-            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">How It Works</Link>
-            <Link href="#demo" className="hover:text-purple-400 transition-colors">Demo</Link>
-            <motion.button
+            <Link href="#features" className="hover:text-purple-400 transition-colors">
+              Features
+            </Link>
+            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">
+              How It Works
+            </Link>
+            <Link href="#demo" className="hover:text-purple-400 transition-colors">
+              Demo
+            </Link>
+            <motion.a
+              href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold text-center"
             >
               Add to Discord
-            </motion.button>
+            </motion.a>
           </motion.div>
         )}
       </nav>

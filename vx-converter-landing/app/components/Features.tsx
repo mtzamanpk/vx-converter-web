@@ -1,6 +1,7 @@
-'use client'
-import { motion } from 'framer-motion'
-import { LinkIcon, EyeIcon, BoltIcon } from '@heroicons/react/24/outline'
+ 'use client'
+ import { motion } from 'framer-motion'
+ import { LinkIcon, EyeIcon, BoltIcon } from '@heroicons/react/24/outline'
+ import Section from './Section'
 
 const features = [
   {
@@ -43,13 +44,13 @@ const itemVariants = {
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-4 bg-gray-900">
-      <div className="container mx-auto">
+    <Section id="features" surface className="px-4">
+      <div className="mx-auto w-full max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
+          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           Powerful Features
         </motion.h2>
@@ -64,16 +65,16 @@ export default function Features() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-gray-800/80 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-fuchsia-600/20 hover:border-fuchsia-500/40"
+              className="bg-surface/80 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-purple-600/20 hover:border-purple-500/40"
             >
-              <feature.icon className="w-12 h-12 text-fuchsia-500 mb-4" />
+              <feature.icon className="w-12 h-12 text-purple-500 mb-4" />
               <h3 className="text-2xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-300">{feature.description}</p>
+              <p className="text-muted">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>
       </div>
-    </section>
+    </Section>
   )
 }
 

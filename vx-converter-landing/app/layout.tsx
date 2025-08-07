@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     shortcut: '/VX_Converter_logo.jpg',
     apple: '/VX_Converter_logo.jpg',
   },
+}
+
+export const viewport: Viewport = {
   themeColor: '#000000',
 }
 
@@ -56,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${inter.className} bg-background text-foreground`}>
         <div className="pointer-events-none fixed inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
         <div className="relative">{children}</div>
       </body>

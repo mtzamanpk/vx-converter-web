@@ -1,6 +1,7 @@
-'use client'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+ 'use client'
+ import { useState } from 'react'
+ import { motion } from 'framer-motion'
+ import Section from './Section'
 
 type QA = { q: string; a: string }
 
@@ -23,13 +24,13 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="py-20 px-4">
-      <div className="container mx-auto max-w-3xl">
+    <Section id="faq" className="px-4">
+      <div className="mx-auto w-full max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           Frequently Asked Questions
         </motion.h2>
@@ -38,14 +39,14 @@ export default function FAQ() {
           {faqs.map((item, i) => {
             const isOpen = openIndex === i
             return (
-              <div key={item.q} className="rounded-lg border border-gray-800 bg-gray-900/60">
+              <div key={item.q} className="rounded-lg border border-border bg-surface/60">
                 <button
                   className="w-full text-left px-5 py-4 flex items-center justify-between"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold text-white">{item.q}</span>
-                  <span className="ml-4 text-fuchsia-400">{isOpen ? '-' : '+'}</span>
+                  <span className="font-semibold text-foreground">{item.q}</span>
+                  <span className="ml-4 text-rose-400">{isOpen ? '-' : '+'}</span>
                 </button>
                 <div
                   className={[
@@ -53,14 +54,14 @@ export default function FAQ() {
                     isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
                   ].join(' ')}
                 >
-                  <div className="overflow-hidden px-5 pb-4 text-gray-300">{item.a}</div>
+                  <div className="overflow-hidden px-5 pb-4 text-muted">{item.a}</div>
                 </div>
               </div>
             )
           })}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

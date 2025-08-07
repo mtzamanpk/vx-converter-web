@@ -1,23 +1,24 @@
-'use client'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { HelpCircle } from 'lucide-react'
+ 'use client'
+ import { motion } from 'framer-motion'
+ import Link from 'next/link'
+ import { HelpCircle } from 'lucide-react'
+ import Section from './Section'
 
 export default function Support() {
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto text-center">
+    <Section id="support" className="px-4">
+      <div className="mx-auto w-full max-w-3xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="max-w-2xl mx-auto"
         >
-          <HelpCircle className="w-16 h-16 mx-auto mb-6 text-purple-500" />
-          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400">
+          <HelpCircle className="w-16 h-16 mx-auto mb-6 text-rose-500" />
+          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             Need Help or Found a Bug?
           </h2>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8 text-muted">
             Join our Discord community for support, bug reports, and feature requests. Our team is ready to help!
           </p>
           <motion.div
@@ -28,7 +29,7 @@ export default function Support() {
               href="https://discord.gg/entmj9fGxH"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-600 to-violet-600 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl shadow-fuchsia-500/20"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl shadow-purple-500/20"
             >
               Join Our Discord
               <svg
@@ -43,7 +44,7 @@ export default function Support() {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </Section>
   )
 }
 

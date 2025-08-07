@@ -1,5 +1,6 @@
-'use client'
-import { motion } from 'framer-motion'
+ 'use client'
+ import { motion } from 'framer-motion'
+ import Section from './Section'
 
 const stats = [
   { label: 'Servers using VX Converter', value: '5,000+' },
@@ -10,13 +11,13 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section id="stats" className="py-20 px-4">
-      <div className="container mx-auto">
+    <Section id="stats" className="px-4">
+      <div className="mx-auto w-full max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           Trusted Performance
         </motion.h2>
@@ -28,15 +29,15 @@ export default function Stats() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="rounded-xl bg-gray-900/60 border border-fuchsia-600/20 p-6 text-center shadow-lg"
+              className="rounded-xl bg-surface/60 border border-rose-500/20 p-6 text-center shadow-lg"
             >
-              <div className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400">{item.value}</div>
-              <div className="mt-2 text-sm md:text-base text-gray-300">{item.label}</div>
+              <div className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-amber-400">{item.value}</div>
+              <div className="mt-2 text-sm md:text-base text-muted">{item.label}</div>
             </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

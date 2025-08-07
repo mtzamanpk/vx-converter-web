@@ -1,7 +1,8 @@
-'use client'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+ 'use client'
+ import { useState } from 'react'
+ import { motion } from 'framer-motion'
+ import Image from 'next/image'
+ import Section from './Section'
 
 const demoSteps = [
   {
@@ -29,26 +30,26 @@ export default function Demo() {
   }
 
   return (
-    <section id="demo" className="py-20 px-4 bg-gray-900">
-      <div className="container mx-auto">
+    <Section id="demo" surface className="px-4">
+      <div className="mx-auto w-full max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
+          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           See VX Converter in Action
         </motion.h2>
-        <div className="bg-gray-800 p-8 rounded-lg shadow-xl">
+        <div className="bg-surface p-8 rounded-lg shadow-xl border border-border/60">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h3 className="text-2xl font-semibold mb-4">{demoSteps[currentStep].title}</h3>
-              <p className="text-gray-300 mb-4">{demoSteps[currentStep].content}</p>
+              <p className="text-muted mb-4">{demoSteps[currentStep].content}</p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={nextStep}
-                className="bg-gradient-to-r from-fuchsia-600 to-violet-600 px-6 py-2 rounded-full font-semibold shadow-lg shadow-fuchsia-500/20"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold shadow-lg shadow-purple-500/20"
               >
                 Next Step
               </motion.button>
@@ -67,7 +68,7 @@ export default function Demo() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

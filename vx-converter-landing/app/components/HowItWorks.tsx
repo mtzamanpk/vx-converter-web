@@ -1,5 +1,6 @@
-'use client'
-import { motion } from 'framer-motion'
+ 'use client'
+ import { motion } from 'framer-motion'
+ import Section from './Section'
 
 const steps = [
   { number: '01', title: 'Add Bot', description: 'Invite VX Converter to your Discord server.' },
@@ -9,13 +10,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 px-4">
-      <div className="container mx-auto">
+    <Section id="how-it-works" className="px-4">
+      <div className="mx-auto w-full max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
+          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           How It Works
         </motion.h2>
@@ -28,14 +29,14 @@ export default function HowItWorks() {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="text-center"
             >
-              <div className="text-4xl font-bold text-fuchsia-500 mb-4">{step.number}</div>
+              <div className="text-4xl font-bold text-purple-500 mb-4">{step.number}</div>
               <h3 className="text-2xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-gray-300">{step.description}</p>
+              <p className="text-muted">{step.description}</p>
             </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

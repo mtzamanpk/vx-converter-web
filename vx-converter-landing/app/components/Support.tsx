@@ -14,7 +14,7 @@ export default function Support() {
           className="max-w-2xl mx-auto"
         >
           <HelpCircle className="w-16 h-16 mx-auto mb-6 text-purple-500" />
-          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400">
             Need Help or Found a Bug?
           </h2>
           <p className="text-xl mb-8 text-gray-300">
@@ -28,7 +28,7 @@ export default function Support() {
               href="https://discord.gg/entmj9fGxH"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-600 to-violet-600 px-8 py-3 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl shadow-fuchsia-500/20"
             >
               Join Our Discord
               <svg

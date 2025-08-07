@@ -49,7 +49,7 @@ export default function Features() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
         >
           Powerful Features
         </motion.h2>
@@ -64,9 +64,9 @@ export default function Features() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-gray-800/80 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-fuchsia-600/20 hover:border-fuchsia-500/40"
             >
-              <feature.icon className="w-12 h-12 text-purple-500 mb-4" />
+              <feature.icon className="w-12 h-12 text-fuchsia-500 mb-4" />
               <h3 className="text-2xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-300">{feature.description}</p>
             </motion.div>

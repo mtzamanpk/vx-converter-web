@@ -35,7 +35,7 @@ export default function Demo() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+          className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400"
         >
           See VX Converter in Action
         </motion.h2>
@@ -48,7 +48,7 @@ export default function Demo() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={nextStep}
-                className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold"
+                className="bg-gradient-to-r from-fuchsia-600 to-violet-600 px-6 py-2 rounded-full font-semibold shadow-lg shadow-fuchsia-500/20"
               >
                 Next Step
               </motion.button>

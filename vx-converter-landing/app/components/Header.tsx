@@ -24,19 +24,25 @@ export default function Header() {
               height={40}
               className="rounded-full"
             />
-            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400">
               VX Converter
             </span>
           </Link>
           <div className="hidden md:flex space-x-6">
-            <Link href="#features" className="hover:text-purple-400 transition-colors">
+            <Link href="#features" className="hover:text-fuchsia-400 transition-colors">
               Features
             </Link>
-            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">
+            <Link href="#stats" className="hover:text-fuchsia-400 transition-colors">
+              Stats
+            </Link>
+            <Link href="#how-it-works" className="hover:text-fuchsia-400 transition-colors">
               How It Works
             </Link>
-            <Link href="#demo" className="hover:text-purple-400 transition-colors">
+            <Link href="#demo" className="hover:text-fuchsia-400 transition-colors">
               Demo
+            </Link>
+            <Link href="#faq" className="hover:text-fuchsia-400 transition-colors">
+              FAQ
             </Link>
           </div>
           <motion.a
@@ -45,7 +51,7 @@ export default function Header() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold"
+            className="hidden md:inline-block bg-gradient-to-r from-fuchsia-600 to-violet-600 px-6 py-2 rounded-full font-semibold shadow-lg shadow-fuchsia-500/20"
           >
             Add to Discord
           </motion.a>
@@ -71,19 +77,17 @@ export default function Header() {
             <Link href="#features" className="hover:text-purple-400 transition-colors">
               Features
             </Link>
-            <Link href="#how-it-works" className="hover:text-purple-400 transition-colors">
-              How It Works
-            </Link>
-            <Link href="#demo" className="hover:text-purple-400 transition-colors">
-              Demo
-            </Link>
+            <Link href="#stats" className="hover:text-fuchsia-400 transition-colors">Stats</Link>
+            <Link href="#how-it-works" className="hover:text-fuchsia-400 transition-colors">How It Works</Link>
+            <Link href="#demo" className="hover:text-fuchsia-400 transition-colors">Demo</Link>
+            <Link href="#faq" className="hover:text-fuchsia-400 transition-colors">FAQ</Link>
             <motion.a
               href="https://discord.com/oauth2/authorize?client_id=1162090895898857662&permissions=223232&integration_type=0&scope=bot"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full font-semibold text-center"
+              className="bg-gradient-to-r from-fuchsia-600 to-violet-600 px-6 py-2 rounded-full font-semibold text-center shadow-lg shadow-fuchsia-500/20"
             >
               Add to Discord
             </motion.a>
